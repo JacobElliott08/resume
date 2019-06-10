@@ -1,0 +1,175 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{2pt}}
+  }
+}
+
+\newcommand{\resumeDesc}[1]{
+  \item\small{
+    {#1 \vspace{2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-3pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-1pt}}
+\newcommand{\resumeSubItemSpace}[2]{\resumeItem{#1}{#2}\vspace{-1pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://github.com/JacobElliott08}{\Large Jacob Elliott}} & Email : \href{mailto:jacob.elliott80@gmail.com}{jacob.elliott80@gmail.com}\\
+  \href{https://github.com/JacobElliott08}{https://github.com/JacobElliott08} & Mobile : +1-000-000-0000 \\
+\end{tabular*}
+
+%------------KEY SKILLS------------------
+
+\section{Key Skills}
+\resumeSubHeadingListStart
+  \resumeSubItemSpace{Languages}
+	{Java, Spring, C, C++, Python 2, Python 3, Gosu, Javascript, Vue.js, Node.js, JUnit}
+\resumeSubItemSpace{Environment}
+	{GNU/Linux (Ubuntu, CentOS, Debian), Windows, MacOS}
+\resumeSubItemSpace{Devops}
+	{Make, Bash, Git, SVN, Jenkins, Artifactory, Maven, Gradle, Ant, Docker}
+\resumeSubItemSpace{Application Servers}
+	{Tomcat Catalina, Apache Tomcat}
+\resumeSubItemSpace{Tools}
+	{NetBeans, Eclipse, IntelliJ, Atom, Postman, WAMP}
+\resumeSubHeadingListEnd
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {The Co-operators}{Guelph, ON}
+      {Systems Developer}{January 2019 - Present}
+	\resumeItemListStart
+		\resumeDesc{In charge of migrating build and deploy jobs from a legacy Jenkins instance to the latest version of Jenkins. Redesigned our build and deploy process to include automated unit tests and created reusable build and deploy jobs. }
+		\resumeDesc{Helped design and implement an automated testing suite using Selenium for the Guidewire Suite. }
+		\resumeDesc{Assisted with interviews of co-op students as well as mentoring them during their work term.}
+	\resumeItemListEnd
+
+    \resumeSubheading
+      {The Co-operators}{Guelph, ON}
+      {Jr. Systems Developer (Co-op)}{April - Sept, 2013 - 2018}
+	\resumeItemListStart
+		\resumeDesc{Created a new log file viewer for all testing and production regions. Utilized parallel programming, and distributed computed techniques in Java  in order to greatly increase efficiency when searching across multiple servers and multiple log files. Utilized AngularJS, bootstrap css, and Spring to build the full application. }
+		\resumeDesc{Designed and implemented a new feature to override the mandatory attributes of insured items so agents could save the incomplete item and finish the insured item when they had the correct data. This feature was able to greatly increase our data accuracy as agents were filling in missing data incorrectly.}
+		\resumeDesc{Tasked with assessing and fixing production defects. Assessed  the root cause, impact to the business, work around, and resolution so the defect could be prioritized in the backlog and fixed in future sprints.}
+	\resumeItemListEnd	
+
+    \resumeSubheading
+      {University of Guelph}{Guelph, ON}
+      {Teaching Assistant - Introduction to Programming, Intermediate Programming}{Jan 2015 - Dec 2016}
+      \resumeItemListStart
+        \resumeDesc {Conducted two weekly extra help session where students would come for help with course material, assignment work, and exam studying.}
+        \resumeDesc {Involved in creating and grading assignment, and exams. Assignments were graded in person by appointment, where extensive feedback was given.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Guelph}{Guelph, ON}
+      {Bachelor of Computing; Computer Science,  GPA: 3.50}{Sept. 2013 -- April. 2018}
+         \resumeSubHeadingListStart
+           \resumeDesc {Wrote a web scraper with the guidance of a professor that gathered abstracts of academic papers from publishing websites in order to study automated corpus creation.}
+           \resumeDesc{Tutored multiple computer science students in both advanced programming and intermediate programming courses.}
+           \resumeDesc{Worked with a graduate student on their masters project. Tracked students knowledge and understand of programming concepts based on their assignment grades while giving feedback to them on how to improve and avoid mistakes in the future.}
+         \resumeSubHeadingListEnd
+	
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+%\section{Projects}
+%  \resumeSubHeadingListStart
+%    \resumeSubItem{QuantSoftware Toolkit}
+%      {Open source python library for financial data analysis and machine learning for finance.}
+%    \resumeSubItem{Github Visualization}
+%      {Data Visualization of Git Log data using D3 to analyze project trends over time.}
+%    \resumeSubItem{Recommendation System}
+%      {Music and Movie recommender systems using collaborative filtering on public datasets.}
+%    \resumeSubItem{Mac Setup}
+%      {Book that gives step by step instructions on setting up developer environment on Mac OS.}
+%  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+%\section{Programming Skills}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+%      \hfill
+%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+%    }
+%  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
